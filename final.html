@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Final</title>
+  <link rel="stylesheet" href="final.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+  <script src="final.js"></script>
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+      <h3>코드캠프 회원가입</h3>
+        <input type="text" placeholder="이메일을 입력해주세요." class="textbox" id="email">
+        <div class="error" id="error__email"></div>
+        <input type="text" placeholder="이름을 입력해 주세요." class="textbox" id="username">
+        <div class="error" id="error__username"></div>
+        <input type="password" placeholder="비밀번호를 입력해 주세요." class="textbox" id="pw1">
+        <div class="error" id="error__password1"></div>
+        <input type="password" placeholder="비밀번호를 다시 입력해 주세요." class="textbox" id="pw2">
+        <div class="error" id="error__password2"></div>
+      <div class="telephone">
+        <input type="text" oninput="changeFocus1()" class="phone__number" maxlength="3" id="p1">-
+        <input type="text" oninput="changeFocus2()" class="phone__number" maxlength="4" id="p2">-
+        <input type="text" oninput="changeFocus3()" class="phone__number" maxlength="4" id="p3">
+      </div>
+      <div class="check__number">
+        <div id="check">000000</div>
+        <button class="check__btn" onclick="getToken()" disabled="true" id="check__btn">인증번호 전송</button>
+      </div>
+      <div class="check__number">
+        <div id="timer">3:00</div>
+        <button class="submit__btn" id="submit__btn" disabled="true">인증 확인</button>
+      </div>
+      <select name="area" class="area" id="location">
+        <option value="">지역을 선택하세요.</option>
+        <option value="busan">부산</option>
+        <option value="seoul">서울</option>
+        <option value="daegu">대구</option>
+      </select>
+      <div id="error__location" class="error"></div>
+      <div class="gender">
+        <div class="female">
+          <input type="radio" name="" id="female__circle">여성
+        </div>
+        <div class="male">
+          <input type="radio" name="" id="male__circle">남성
+        </div>
+      </div>
+      <div id="error__gender" class="error"></div>
+      <div class="underline"></div>
+      <button class="register__btn" id="register__btn" disabled="true" onclick="signup()">가입하기</button>
+    </div>
+  </div>
+</body>
+</html>
+
+
+

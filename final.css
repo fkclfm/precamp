@@ -1,0 +1,165 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 540px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 7px 7px 37px #aacdff;
+  border: 1px solid #aacdff;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  padding: 60px;
+}
+
+h3 {
+  width: 380px;
+  color: #0068ff;
+  font-weight: bold;
+  font-size: 32px;
+  padding-right: 130px;
+  margin-bottom: 20px;
+}
+
+.textbox {
+  width: 380px;
+  height: 60px;
+  color: #797979;
+  font-size: 16px;
+  font-weight: 400;
+  padding-left: 20px;
+  border-radius: 7px;
+  border: 1px solid #d2d2d2;
+  margin-top: 20px;
+}
+
+.telephone {
+  width: 380px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.phone__number {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #d2d2d2;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.check__number {
+  width: 380px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+#check, #timer {
+  color: #0068ff;
+  font-size: 18px;
+}
+.check__btn, .submit__btn {
+  width: 120px;
+  height: 40px;
+  border: 1px solid #d2d2d2;
+  border-radius: 7px;
+  margin-left: 20px;
+}
+#check__btn {
+  background-color: #fff;
+  color: #0068ff;
+}
+
+#submit__btn {
+  background-color: #0068ff;
+  color: #fff;
+}
+.area {
+  width: 380px;
+  height: 60px;
+  border-radius: 7px;
+  border: 1px solid #d2d2d2;
+  color: #797979;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.gender {
+  display: flex;
+  flex-direction: row;
+  width: 140px;
+  height: 23.94px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.female {
+  width: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.male {
+  width: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+#female__circle {
+  background-color: #ebebeb;
+  border: 1px solid #d2d2d2;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.underline {
+  width: 380px;
+  height: 1px;
+  border-top: 1px solid #e6e6e6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.register__btn {
+  width: 380px;
+  height: 100px;
+  border: 1px solid #0068ff;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #0068ff;
+  background-color: #fff;
+}
+
+.error {
+  font-size: 11px;
+  color: red;
+  text-align: center;
+  height: 10px;
+}
